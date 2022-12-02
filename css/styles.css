@@ -3,9 +3,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-bottom: 3rem
 }
 
 h1 {
@@ -16,19 +14,40 @@ h2 {
 }
 
 header > img {
+    width: 60%;
+    padding: 20px;
     filter: drop-shadow(1px 1px 2px white)
-        drop-shadow(-1px -1px 7px white);
+        drop-shadow(1px 1px 7px white);
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
+nav {
+    background-color: white;
+}
 nav ul {
     list-style: none;
     text-align: center;
 }
 nav li {
     display: inline-block;
+}
+nav a {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black,
+        1px 1px 5px black;
+    font-size: 25px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: transparent;
+    text-shadow: 1px 1px 3px white,
+        0 0 #000;
 }
 
 section {
@@ -46,4 +65,8 @@ footer {
 }
 footer div {
     flex: 1;
+    margin: auto 25px;
+}
+footer img {
+    width: 30%
 }
