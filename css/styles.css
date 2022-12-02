@@ -3,13 +3,19 @@
 } */
 body {
     background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Cormorant Garamond;
     color: white;
     margin: auto;
 }
 
 h1 {
     font-size: 3rem;
+    color: black;
+    text-shadow: 1px 1px 1px #F6F3E3,
+        2px 2px 1px #F6F3E3,
+        3px 3px 1px #F6F3E3,
+        0px 0px 1px #F6F3E3,
+        3px 3px 20px #F7F5C9;
 }
 h2 {
     font-size:  2rem;
@@ -18,14 +24,15 @@ h2 {
 header > img {
     max-width: 85vw;
     padding: 20px;
-    filter: drop-shadow(1px 1px 2px white)
-        drop-shadow(1px 1px 7px white);
+    filter: drop-shadow(1px 1px 1px white)
+        drop-shadow(1px 2px 2px white)
+        drop-shadow(1px 3px 9px white);
     display: block;
     margin: auto;
 }
 
 nav {
-    background-color: white;
+    background: linear-gradient(60deg, white 0%, #F6F3E3, #F7F5C9);
 }
 nav ul {
     text-align: center;
@@ -43,7 +50,7 @@ nav a {
     color: white;
     text-shadow: 1px 1px 1px black,
         1px 1px 5px black;
-    font-size: 25px;
+    font-size: 20pt;
     font-weight: bold;
 }
 nav a:hover {
@@ -60,6 +67,13 @@ article {
     flex: 1;
     margin: auto 10px;
 }
+.offer {
+    text-align: right;
+    background-image: url(../assets/special-offer.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
 
 footer {
     display: flex;
@@ -69,6 +83,7 @@ footer div {
     padding: 5px;
     margin: auto;
     text-align: center;
+    /* font-size: 25%; */
 }
 footer img {
     width: 15vw
