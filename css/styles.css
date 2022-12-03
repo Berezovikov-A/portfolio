@@ -8,21 +8,35 @@ body {
     margin: auto;
 }
 
-header > img {
+header img {
     max-width: 85vw;
-    animation: glow 5s forwards;
+    animation: glow 3s forwards;
     padding: 20px;
-    display: block;
     margin: auto;
+}
+header .logo1 {
+    display: block;
+}
+header .logo2 {
+    display: none;
 }
 
 @keyframes glow {
-    from {}
-    to {filter: drop-shadow(0px 0px 1px white)
-            drop-shadow(1px 1px 1px white)
-            drop-shadow(1px 2px 2px white)
-            drop-shadow(1px 3px 9px white);
+    0% {}
+    30% {filter: drop-shadow(0px 0px 1px white);
         }
+    60% {filter: drop-shadow(0px 0px 1px white)
+        drop-shadow(1px 1px 1px white);
+    }
+    90% {filter: drop-shadow(0px 0px 1px white)
+        drop-shadow(1px 1px 1px white)
+        drop-shadow(1px 2px 2px white);
+    }
+    100% {filter: drop-shadow(0px 0px 1px white)
+        drop-shadow(1px 1px 1px white)
+        drop-shadow(1px 2px 2px white)
+        drop-shadow(1px 3px 9px white);
+    }
 }
 
 nav {
@@ -71,6 +85,12 @@ nav a:active {
     .info img {
         width: 50%;
         float: left;
+    }
+    header .logo1 {
+        display: none;
+    }
+    header .logo2 {
+        display: block;
     }
 }
 
